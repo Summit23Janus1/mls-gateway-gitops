@@ -1,0 +1,15 @@
+app:
+  name: mls-poi-gateway-app
+  namespace: mls
+  cluster: .apps.summit23rock.n26o.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23Janus1/mls-gateway
+  org: Summit23Janus1
+  name: mls-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: mls/poi-gateway-app
+  tag: latest
